@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness and Wellness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #503898;
+        }
+
+        header {
+            background-color: #d6f066;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ca2222;
+        }
+
+        nav a {
+            color: #26f938;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .workout, .nutrition, .wellness {
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .gallery img {
+            width: 48%; /* Two images per row */
+        }
+
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            margin: 0 10px;
+            color: #555;
+            font-size: 24px;
+        }
+
+        .social-buttons a:hover {
+            color: #333;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .gallery img {
+                width: 100%; /* One image per row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Fitness and Wellness</h1>
+        <p>Your guide to a healthier life</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#workouts">Workout Routines</a>
+        <a href="#nutrition">Nutrition Guides</a>
+        <a href="#photos">Photo Gallery</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Page Section -->
+        <section id="home">
+            <h2 class="section-title">Welcome to Fitness and Wellness</h2>
+            <p>Explore various workout plans, nutrition tips, and wellness articles tailored for your fitness journey. Join our community and start living a healthier life today!</p>
+            <h3>Featured Workout</h3>
+            <p><strong>Beginner Full-Body Workout:</strong> A perfect start for newcomers. Aim for 3 sets of 12 reps for each exercise.</p>
+        </section>
+
+        <!-- Workout Routines Section -->
+        <section id="workouts">
+            <h2 class="section-title">Workout Routines</h2>
+            <div class="workout">
+                <h3>Full-Body Workout</h3>
+                <p>45 minutes - Beginner</p>
+                <p><strong>Exercises:</strong></p>
+                <ul>
+                    <li>Push-ups: 3 sets of 10 reps</li>
+                    <li>Squats: 3 sets of 15 reps</li>
+                    <li>Planks: 3 sets of 30 seconds</li>
+                </ul>
+            </div>
+            <div class="workout">
+                <h3>Cardio HIIT</h3>
+                <p>30 minutes - Intermediate</p>
+                <p><strong>Exercises:</strong></p>
+                <ul>
+                    <li>Burpees: 3 sets of 10 reps</li>
+                    <li>Jumping Jacks: 3 sets of 20 reps</li>
+                    <li>High Knees: 3 sets of 30 seconds</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Nutrition Guides Section -->
+        <section id="nutrition">
+            <h2 class="section-title">Nutrition Guides</h2>
+            <div class="nutrition">
+                <p>Discover tips for healthy eating and meal planning.</p>
+                <h3>Healthy Eating Tips</h3>
+                <ul>
+                    <li>Incorporate more fruits and vegetables into your meals.</li>
+                    <li>Stay hydrated by drinking plenty of water.</li>
+                    <li>Plan your meals ahead of time to avoid unhealthy choices.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="photos">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/400" alt="Transformation 1">
+                <img src="https://via.placeholder.com/400" alt="Transformation 2">
+                <img src="https://via.placeholder.com/400" alt="Workout Technique 1">
+                <img src="https://via.placeholder.com/400" alt="Workout Technique 2">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Social Media Buttons -->
+    <div class="social-buttons">
+        <a href="#" title="Facebook">&#x1F426;</a>
+        <a href="#" title="Twitter">&#x1F426;</a>
+        <a href="#" title="Instagram">&#x1F426;</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fitness and Wellness. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Navigation -->
+    <script>
+        // Smooth scroll for navigation links
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = e.target.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
