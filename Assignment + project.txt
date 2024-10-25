@@ -1,6 +1,0 @@
-select project 
-partner min2 mix3
-title mean any project
-commrece project 1 or 2 product website
-
-how to make a folder  for project
